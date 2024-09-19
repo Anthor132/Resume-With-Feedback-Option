@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
 
-    <title>Anthor Kumar Das</title>
+    <title>Feedback Form</title>
 </head>
 <body>
-    <h2 style="color: red;font-size: 26px;">Feedback Form</h2>
+    <h2>Feedback Form</h2>
     <hr>
-<form action="https://formsubmit.co/antordas594@gmail.com" method="POST">
+<form action="https://formsubmit.co/4e744bce2d3b36e5f0f1989c317b7002" method="POST">
     <!--To add your email first verify your email here https://formsubmit.co/email-link and then replace your mail on the previous line -->
 <h3>Basic Information</h3>
-<pre style="font-size: 16px;font-weight: bold;">Name:     <input type="text" placeholder="Give Your Name"></pre>
-<pre style="font-size: 16px;font-weight: bold;">Email:    <input type="text" placeholder="Enter your email"></pre>
-<pre style="font-size: 16px;font-weight: bold;">Password: <input type="password" placeholder="Optional You Can Skip"></pre>
+<pre class="pr">Name : <input type="text" name="Name" placeholder="Give Your Name" class="contact-inputs" required></pre>
+<pre class="pr">Email: <input type="email" name="Email" placeholder="Enter your email" class="contact-inputs" required></pre>
 <br>
 <h3>Which Framework Is Most Important For Modern Web Application</h3>
 <label for="php">
-    <input type="radio" value="PHP" name="class" id="php">PHP
+    <input type="radio" value="PHP" name="Framework" id="php">PHP
 </label>
 <label for="asp.net">
-    <input type="radio" value="Asp.net" name="class" id="asp.net">Asp.net
+    <input type="radio" value="Asp.net" name="Framework" id="asp.net">Asp.net
 </label>
 <label for="js">
-    <input type="radio" value="JS Frameworks" name="class" id="js">JS Frameworks
+    <input type="radio" value="JS Frameworks" name="Framework" id="js">JS Frameworks
 </label>
 <br>
 <br>
@@ -40,7 +40,7 @@
 <br>
 
 <h3>Where Do You Live In?</h3>
-<select id="city">
+<select id="city" name="City" class="contact-inputs" required>
     <option value="Dhaka">Dhaka</option>
     <option value="Chittagong">Chittagong</option>
     <option value="Khulna">Khulna</option>
@@ -52,10 +52,10 @@
 <br>
 <br>
 <h3>Please Provide Any Suggestion For Me</h3>
-<textarea type="text" placeholder="Anything you would like to tell me" rows="10" cols="40"></textarea>
+<textarea name="Feedback" placeholder="Kindly Provide Your Feedback Here" class="contact-inputs" rows="10" cols="40"></textarea>
 <br>
 <br>
-<input type="submit" name="Submit" value="Submit Now">
+<button type="submit">Submit</button>
 <br>
 <footer>
     <h2 style="text-align: center;color: red;">Thanks For Your Valuable Time</h2>
